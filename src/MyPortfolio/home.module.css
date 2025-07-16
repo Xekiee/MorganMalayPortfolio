@@ -1,0 +1,318 @@
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between  ;
+    align-items: center;
+    height: 100vh;
+    background: var(--pf-bg)  no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.homeContent h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--pf-pc);
+    opacity: 0;
+    animation: SlideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.homeContent h1:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+.homeContent h1 span{
+    color: var(--pf-ac);
+}
+.homeContent h3 span{
+    color: var(--pf-pc);
+}
+.homeContent h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.homeScl a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--pf-ac);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--pf-ac);
+    text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 30px 15px 30px 0;
+}
+.homeScl a:hover{
+    background: var(--pf-ac);
+    color: #2B1E1B;
+    box-shadow: 0px 0 20px var(--pf-ac);
+}
+
+
+.profileImg{
+    height: 500px;
+    width: 500px;
+    padding-left: 0%;
+    opacity: 0;
+    animation: SlideBottom 1s ease forwards;
+    animation-delay: .3s;
+    
+}
+.lineBorder{
+    height: 350px;         
+    margin: 0 40px;  
+    position: absolute;
+    left: 50%;                 
+    transform: translateX(-50%);               
+    border-left: 7px solid var(--pf-pc);
+    pointer-events: none;  
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s; 
+}
+
+@media (max-width: 600px) {
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 5% 40px;
+    height: auto;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .homeContent {
+    order: 3;
+  }
+
+  .homeContent h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    line-height: 1.2;
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+  }
+  .homeContent h1:nth-of-type(1) {
+    animation-delay: 0.2s;
+  }
+
+  .homeContent h1:nth-of-type(2) {
+    animation-delay: 0.4s;
+  }
+
+  .homeContent h1:nth-of-type(3) {
+    animation-delay: 0.6s;
+  }
+
+  .homeScl {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    opacity: 0;
+    animation: fadeSlideUp 0.7s ease forwards;
+    animation-delay: calc(0.7s + 0.1s * var(--i));
+  }
+
+  .homeScl a {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    margin: 10px 5px;
+  }
+
+  .lineBorder {
+    order: 2;
+    position: static;
+    width: 50%;
+    height: 0;
+    margin: 0 auto;
+    border-left: none;
+    border-top: 5px solid var(--pf-pc);
+    transform: none;
+    opacity: 0;
+    transform-origin: center;
+    animation: growLine 1s ease forwards;
+    animation-delay: 1.2s;
+  }
+
+  .profileImg {
+    order: 1;
+    width: 70vw;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeSlideUp 1s ease forwards;
+    animation-delay: 0.8s;
+  }
+}
+
+@media (max-width: 992px) {
+  
+  .home {
+    flex-direction: column;          
+    justify-content: center;
+    padding: 100px 8% 40px;
+    height: auto;                   
+    gap: 2rem;
+  }
+
+  
+  .profileImg {
+    order: 1;
+    width: 60vw;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeSlideUp 1s ease forwards;
+    animation-delay: 0.8s;
+  }
+
+  
+  .lineBorder {
+    order: 2;
+    position: static;
+    width: 60%;
+    max-width: 400px;
+    height: 0;
+    margin: 0 auto;
+    border-left: none;
+    border-top: 6px solid var(--pf-pc);
+    transform: none;  
+    opacity: 0;
+    transform-origin: center;
+    animation: growLine 1s ease forwards;
+    animation-delay: 1.2s; 
+  }
+
+  .homeContent {
+    order: 3;
+    text-align: center;
+  }
+
+  .homeContent h1 {
+    font-size: 36px;               
+    margin: 8px 0;
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+  }
+  .homeContent h1:nth-of-type(1) {
+    animation-delay: 0.2s;
+  }
+
+  .homeContent h1:nth-of-type(2) {
+    animation-delay: 0.4s;
+  }
+
+  .homeContent h1:nth-of-type(3) {
+    animation-delay: 0.6s;
+  }
+
+
+  .homeScl a {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    margin: 24px 10px;
+    opacity: 0;
+    animation: fadeSlideUp 0.7s ease forwards;
+    animation-delay: calc(0.7s + 0.1s * var(--i));
+  }
+
+}
+
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes SlideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes growLine {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}

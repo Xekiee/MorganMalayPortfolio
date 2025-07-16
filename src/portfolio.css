@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'boxicons/css/boxicons.min.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+body{
+    color: var(--pf-pc);
+    background:var(--pf-bg);
+}
+:root {
+    --pf-bg: #2B1E1B;
+    --pf-pc: #FFF1EB;
+    --pf-sc:#E9C6B3;
+    --pf-ac: #FFB88C;
+}
+html {
+  scroll-behavior: smooth;
+}
+body.light{
+    --pf-bg: #FFF8F4;
+    --pf-pc: #2E2E2E;
+    --pf-sc: #6E6E6E;
+    --pf-ac: #A15D3A;
+}
+@keyframes headerSlideDown {
+  0%   { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0);     opacity: 1; }
+}
+.header {
+  animation: headerSlideDown 0.6s cubic-bezier(.25,.8,.25,1) forwards;
+}

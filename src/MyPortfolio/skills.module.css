@@ -1,0 +1,183 @@
+.skillsSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+}
+.skillsSection span{
+  display: flex;
+  justify-content: center; 
+}
+.subtitle{
+  color: var(--pf-pc);
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+.skillsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2, auto);   
+  gap: 50px 0;                        
+  padding: 20px 0;
+  height: 400px;
+  width: 1000px;
+  margin-top: 70px;
+  text-decoration: none;
+}
+.skillstitle{
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--pf-pc);
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+}
+.skillsList div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid var(--pf-ac);
+  border-radius: 30px;
+  height: 180px;
+  width: 180px;
+  box-shadow:
+    0 4px 4px rgba(0, 0, 0, 0.2), 
+    inset 0 4px 4px rgba(0, 0, 0, 0.2); 
+    opacity: 0;
+  animation: slideLeft 1s ease forwards, float 3s ease-in-out infinite;
+  animation-delay: calc(.2s * var(--i));
+  transition: transform .3s;
+}
+
+.skillsList i {
+  font-size: 130px;
+  margin-bottom: 10px;
+}
+
+.skillsList span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--pf-pc);
+}
+
+.skillsList h1 {
+  color: var(--pf-ac);
+  font-size: 20px;
+}
+.vitelogo{
+  height: 140px;
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  .skillsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 24px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  .skillsList div {
+    width: 120px;
+    height: 130px;
+    animation: fadeInUp 0.6s ease forwards, float 3s ease-in-out infinite;
+    margin-left: 80px;
+  }
+
+  .skillsList i {
+    font-size: 70px;
+  }
+
+  .vitelogo {
+    height: 80px;
+    width: 60px;
+  }
+
+  .skillstitle {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  .skillsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 32px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  .skillsList div {
+    width: 140px;
+    height: 150px;
+    animation: fadeInUp 0.6s ease forwards, float 3s ease-in-out infinite;
+    margin-left: 80px;
+  }
+
+  .skillsList i {
+    font-size: 100px;
+  }
+
+  .vitelogo {
+    height: 100px;
+    width: 70px;
+  }
+
+  .skillstitle {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@keyframes slideLeft {
+  0%   { transform: translateX(100px); opacity: 0; }
+  100% { transform: translateX(0);     opacity: 1; }
+}
+@keyframes float{
+0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
