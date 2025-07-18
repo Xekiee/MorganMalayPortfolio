@@ -1,91 +1,107 @@
-.home{
-    position: relative;
-    width: 100%;
-    justify-content: space-between  ;
-    align-items: center;
-    height: 100vh;
-    background: var(--pf-bg)  no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 70px 10% 0;
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 70px 10% 0;
+  background: var(--pf-bg) no-repeat center/cover;
 }
-.homeContent h1{
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--pf-pc);
-    opacity: 0;
-    animation: SlideBottom 1s ease forwards;
-    animation-delay: .7s;
+
+.homeContent {
+  flex: 1;
 }
-.homeContent h1:nth-of-type(2){
-    margin-bottom: 30px;
-    animation: slideTop 1s ease forwards;
-    animation-delay: .7s;
+
+.homeContent h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: -3px 0;
+  color: var(--pf-pc);
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
 }
-.homeContent h1 span{
-    color: var(--pf-ac);
+
+.homeContent h1:nth-of-type(1) {
+  animation: SlideBottom 1s ease forwards;
+  animation-delay: 0.7s;
 }
-.homeContent h3 span{
-    color: var(--pf-pc);
+
+.homeContent h1:nth-of-type(2) {
+  margin-bottom: 30px;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 0.7s;
 }
-.homeContent h1{
-    font-size: 50px;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 1s;
+
+.homeContent h1 span {
+  color: var(--pf-ac);
 }
-.homeScl a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid var(--pf-ac);
-    border-radius: 50%;
-    font-size: 20px;
-    color: var(--pf-ac);
-    text-decoration: none;
-    transition: .5s ease;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
-    margin: 30px 15px 30px 0;
+
+.homeContent h3 span {
+  color: var(--pf-pc);
 }
-.homeScl a:hover{
-    background: var(--pf-ac);
-    color: #2B1E1B;
-    box-shadow: 0px 0 20px var(--pf-ac);
+
+.homeScl {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.homeScl a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background: transparent;
+  border: 2px solid var(--pf-ac);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--pf-ac);
+  text-decoration: none;
+  transition: 0.5s ease;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.homeScl a:hover {
+  background: var(--pf-ac);
+  color: #2B1E1B;
+  box-shadow: 0 0 20px var(--pf-ac);
+}
+
+.lineBorder {
+  width: 7px;
+  height: 350px;
+  margin: 0 40px;
+  background-color: var(--pf-pc);
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.Porfilee {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImg {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  opacity: 0;
+  animation: SlideBottom 1s ease forwards;
+  animation-delay: 0.3s;
 }
 
 
-.profileImg{
-    height: 500px;
-    width: 500px;
-    padding-left: 0%;
-    opacity: 0;
-    animation: SlideBottom 1s ease forwards;
-    animation-delay: .3s;
-    
-}
-.lineBorder{
-    height: 350px;         
-    margin: 0 40px;  
-    position: absolute;
-    left: 50%;                 
-    transform: translateX(-50%);               
-    border-left: 7px solid var(--pf-pc);
-    pointer-events: none;  
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 1s; 
-}
-
-@media (max-width: 600px) {
+@media (max-width: 600px ) and (min-width: 320px){
   .home {
     flex-direction: column;
     justify-content: center;
@@ -94,6 +110,7 @@
     height: auto;
     gap: 1.5rem;
     text-align: center;
+    margin-left: 3rem;
   }
 
   .homeContent {
@@ -163,7 +180,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width: 600px){
   
   .home {
     flex-direction: column;          
