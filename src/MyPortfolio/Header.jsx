@@ -24,6 +24,11 @@ export default function Header() {
       label: "Contact",
       icon: <i className="bx bx-envelope"></i>,
     },
+    {
+      id: "projects",
+      label: "Projects",
+      icon: <i className="bx bx-folder"></i>,
+    },
   ];
 
   useEffect(() => {
@@ -60,7 +65,7 @@ export default function Header() {
           <button
             key={item.id}
             className={`${Styles.navItem} ${
-              activeLink === item.id ? Styles.active : ""
+              activeLink === item.id ? Styles.navItemActive : ""
             }`}
             onClick={() => handleNavClick(item.id)}
             title={item.label}
