@@ -1,7 +1,11 @@
 export default function Project() {
   return (
     <div>
-      <section></section>
+      <section>
+        <title>Projects</title>
+
+        <div></div>
+      </section>
     </div>
   );
 }
