@@ -3,7 +3,6 @@ import Contact from "./Contact";
 import Header from "./Header";
 import Home from "./Home";
 import Project from "./Project";
-import Services from "./Services";
 import Skills from "./Skills";
 import { useEffect } from "react";
 
@@ -41,7 +40,6 @@ export default function Porfolio() {
       <Home />
       <About />
       <Skills />
-      <Services />
       <Contact />
       <Project />
     </div>

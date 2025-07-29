@@ -1,5 +1,5 @@
 import Styles from "./about.module.css";
-import Profile from "../Assets/Coverrr.png";
+import Profile from "../Assets/Profilee.jpg";
 import Resume from "../public/Resume.pdf";
 export default function About() {
   return (

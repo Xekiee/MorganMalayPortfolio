@@ -185,9 +185,10 @@
   .home {
     flex-direction: column;          
     justify-content: center;
-    padding: 100px 8% 40px;
+    padding: 20px 10% 0;
     height: auto;                   
     gap: 2rem;
+   
   }
 
   

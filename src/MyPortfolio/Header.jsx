@@ -18,7 +18,7 @@ export default function Header() {
     { id: "home", label: "Home", icon: <i className="bx bx-home"></i> },
     { id: "about", label: "About", icon: <i className="bx bx-user"></i> },
     { id: "skills", label: "Skills", icon: <i className="bx bx-code"></i> },
-    { id: "services", label: "Services", icon: <i className="bx bx-cog"></i> },
+
     {
       id: "contact",
       label: "Contact",

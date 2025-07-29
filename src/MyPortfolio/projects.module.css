@@ -14,18 +14,141 @@
     display: flex;
     gap: 40px;
     margin-bottom: 100px;
-    opacity: 70%;
-    
 }
-.projects div{
+.Projects1, .Projects2, .Projects3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:300px;
-    height: 300px;
-    background-color: var(--pf-sc);
-    border-radius: 30px;
+    width: 350px;
+    height: 350px;
+    backdrop-filter: blur(12px);
+    background: linear-gradient(
+        135deg,
+        rgba(233, 198, 179, 0.15), 
+        rgba(43, 30, 27, 0.2)      
+    );
+    border: 1px solid rgba(255, 241, 235, 0.2); 
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    color: var(--pf-sc);
+    transition: all 0.3s ease;   
 }
+.Projects1:hover,
+.Projects2:hover,
+.Projects3:hover {
+  transform: scale(1.03);
+  background: linear-gradient(
+    135deg,
+    rgba(233, 198, 179, 0.25), 
+    rgba(43, 30, 27, 0.3)
+  );
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.Projects3 {
+  position: relative;
+  overflow: hidden; 
+}
+.Position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    backdrop-filter: blur(12px);
+    background: linear-gradient(
+        135deg,
+        rgba(233, 198, 179, 0.15), 
+        rgba(43, 30, 27, 0.2)      
+    );
+    border: 1px solid rgba(255, 241, 235, 0.2); 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    color: var(--pf-ac);
+    font-weight: 700;
+}
+.Year{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    backdrop-filter: blur(12px);
+    background: linear-gradient(
+        135deg,
+        rgba(233, 198, 179, 0.15), 
+        rgba(43, 30, 27, 0.2)      
+    );
+    border: 1px solid rgba(255, 241, 235, 0.2); 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  
+    border-radius: 10px;
+    font-size: 12px;
+    color: var(--pf-ac);
+    font-weight: 700;
+}
+.TitleCapstonee{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.projectTitle{
+    
+    color: var(--pf-pc);
+    font-weight: bold;
+}
+.Positionn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    backdrop-filter: blur(12px);
+    background: linear-gradient(
+        135deg,
+        rgba(233, 198, 179, 0.15), 
+        rgba(43, 30, 27, 0.2)      
+    );
+    border: 1px solid rgba(255, 241, 235, 0.2); 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    color: var(--pf-ac);
+    font-weight: 700;
+}
+.Positionn span{
+    margin-left: 22px;
+}
+.Title1{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Description{
+    font-size: 12px;
+}
+.capstoneImage{
+    width: 270px;
+    height: 180px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.imgPortfolio {
+  width: 270px;
+  height: 180px;
+  margin-top: 20px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
 @media (min-width: 601px) and (max-width: 992px) {
     .title{
     font-size: 50px;
@@ -35,13 +158,7 @@
         display: flex;
         flex-direction: column;
     }
-    .projects div{
-    display: flex;
-    width: 300px;
-    height: 300px;
-    opacity: 70%;
-    border-radius: 30px;
-    }
+    
 
 }
 @media (max-width: 600px) and (min-width: 320px){
