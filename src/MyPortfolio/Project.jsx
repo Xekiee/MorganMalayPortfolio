@@ -13,7 +13,8 @@ export default function Project() {
           <div className={Styles.Projects1}>
             <div className={Styles.Title1}>
               <div className={Styles.Positionn}>
-                <span>Quality Assurance, UI/UX Designer</span>
+                <span>Quality Assurance</span>
+                <span>UI/UX Designer</span>
               </div>
               <div className={Styles.Year}>2024</div>
             </div>
@@ -32,7 +33,8 @@ export default function Project() {
           <div className={Styles.Projects2}>
             <div className={Styles.Title1}>
               <div className={Styles.Positionn}>
-                <span>Frontend Developer, UI/UX Designer</span>
+                <span>Frontend Developer</span>
+                <span>UI/UX Designer</span>
               </div>
               <div className={Styles.Year}>2025</div>
             </div>
@@ -42,7 +44,7 @@ export default function Project() {
               </div>
               <div className={Styles.Description}>
                 <span>
-                  A web based inventory management system for PCG’s Storage and
+                  A web based inventory management system for PCG Storage and
                   Accountability Officer.
                 </span>
               </div>
@@ -51,7 +53,8 @@ export default function Project() {
           <div className={Styles.Projects3}>
             <div className={Styles.Title1}>
               <div className={Styles.Positionn}>
-                <span>UI/UX Design, Frontend Developer</span>
+                <span>UI/UX Design </span>
+                <span>Frontend Developer</span>
               </div>
               <div className={Styles.Year}>2025</div>
             </div>

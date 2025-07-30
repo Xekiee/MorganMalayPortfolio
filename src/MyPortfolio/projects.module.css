@@ -6,6 +6,10 @@
     margin-top: 150px;
 
 }
+.titleproject{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
 .title{
     font-size: 50px;
     font-weight: 700;
@@ -33,6 +37,8 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
     color: var(--pf-sc);
     transition: all 0.3s ease;   
+    opacity: 0;
+    animation: SlideBottom 1s ease forwards;
 }
 .Projects1:hover,
 .Projects2:hover,
@@ -105,6 +111,7 @@
 }
 .Positionn{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 200px;
@@ -158,9 +165,8 @@
         display: flex;
         flex-direction: column;
     }
-    
-
 }
+
 @media (max-width: 600px) and (min-width: 320px){
     
     .title{
@@ -173,13 +179,26 @@
         flex-direction: column;
         margin-left: 50px;
     }
-
-    .projects div{
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 350px;
-    opacity: 70%;
-    border-radius: 30px;
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
     }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes SlideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+    
 }
