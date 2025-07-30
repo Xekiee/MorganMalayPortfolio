@@ -1,6 +1,7 @@
 import Styles from "./projects.module.css";
 import Plantito from "../Assets/Plantitotita.png";
 import Portfolio from "../Assets/Portfolio.png";
+import SimpleJSApp from "../Assets/SimpleJSApp.png";
 export default function Project() {
   return (
     <div>
@@ -69,6 +70,28 @@ export default function Project() {
             </div>
             <div>
               <img src={Portfolio} alt="" className={Styles.imgPortfolio} />
+            </div>
+          </div>
+          <div className={Styles.Projects3}>
+            <div className={Styles.Title1}>
+              <div className={Styles.Positionn}>
+                <span>UI/UX Design </span>
+                <span>Frontend Developer</span>
+              </div>
+              <div className={Styles.Year}>2025</div>
+            </div>
+            <div className={Styles.TitleCapstonee}>
+              <div className={Styles.projectTitle}>Simple JS App</div>
+              <div className={Styles.Description}>
+                <span>
+                  A beginner-friendly collection of React apps bundled into one
+                  interface, styled with Tailwind CSS and powered by Vite for
+                  lightning-fast development.
+                </span>
+              </div>
+            </div>
+            <div>
+              <img src={SimpleJSApp} alt="" className={Styles.imgPortfolio} />
             </div>
           </div>
         </div>
