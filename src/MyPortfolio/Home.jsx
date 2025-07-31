@@ -19,6 +19,7 @@ export default function Home() {
               href="https://www.facebook.com/morgan.genzola"
               style={{ "--i": 7 }}
               className="bx bxl-facebook"
+              rel="noopener noreferrer"
             ></a>
             <a
               href="https://www.instagram.com/morgzz_gan/"

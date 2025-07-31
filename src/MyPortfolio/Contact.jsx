@@ -45,11 +45,25 @@ export default function Contact() {
               <img src={Jobstreet} alt="" />
             </div>
             <div className={Styles.socmedLink}>
-              <a href="https://www.linkedin.com/in/maxxel-morgan-malay-4144a8371/">
+              <a
+                href="https://www.linkedin.com/in/maxxel-morgan-malay-4144a8371/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Maxxel Morgan Malay
               </a>
-              <a href="https://www.instagram.com/morgzz_gan/">morgzz_gan</a>
-              <a href="https://ph.jobstreet.com/profile/me">
+              <a
+                href="https://www.instagram.com/morgzz_gan/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                morgzz_gan
+              </a>
+              <a
+                href="https://ph.jobstreet.com/profile/me"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Maxxel Morgan Malay
               </a>
             </div>

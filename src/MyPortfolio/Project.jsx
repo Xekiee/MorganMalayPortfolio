@@ -12,7 +12,7 @@ export default function Project() {
         </div>
 
         <div className={Styles.projects}>
-          <div className={Styles.Projects1}>
+          <a className={Styles.Projects1}>
             <div className={Styles.Title1}>
               <div className={Styles.Positionn}>
                 <span>Quality Assurance</span>
@@ -31,8 +31,8 @@ export default function Project() {
             <div>
               <img src={Plantito} alt="" className={Styles.capstoneImage} />
             </div>
-          </div>
-          <div className={Styles.Projects3}>
+          </a>
+          <a className={Styles.Projects3}>
             <div className={Styles.Title1}>
               <div className={Styles.Positionn}>
                 <span>UI/UX Design </span>
@@ -58,8 +58,13 @@ export default function Project() {
                 className={Styles.imgPortfolio}
               />
             </div>
-          </div>
-          <div className={Styles.Projects3}>
+          </a>
+          <a
+            href="https://portfolio-c44eb.web.app"
+            target="blank"
+            rel="noopener noreferrer"
+            className={Styles.Projects3}
+          >
             <div className={Styles.Title1}>
               <div className={Styles.Positionn}>
                 <span>UI/UX Design </span>
@@ -79,8 +84,13 @@ export default function Project() {
             <div>
               <img src={Portfolio} alt="" className={Styles.imgPortfolio} />
             </div>
-          </div>
-          <div className={Styles.Projects3}>
+          </a>
+          <a
+            href="https://simplejsapp-93a09.firebaseapp.com/"
+            target="blank"
+            rel="noopener noreferrer"
+            className={Styles.Projects3}
+          >
             <div className={Styles.Title1}>
               <div className={Styles.Positionn}>
                 <span>UI/UX Design </span>
@@ -101,7 +111,7 @@ export default function Project() {
             <div>
               <img src={SimpleJSApp} alt="" className={Styles.imgPortfolio} />
             </div>
-          </div>
+          </a>
         </div>
       </section>
     </div>

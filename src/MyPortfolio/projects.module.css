@@ -41,6 +41,7 @@
     transition: all 0.3s ease;   
     opacity: 0;
     animation: SlideBottom 1s ease forwards;
+    text-decoration: none;
 }
 .Projects1:hover,
 .Projects2:hover,
