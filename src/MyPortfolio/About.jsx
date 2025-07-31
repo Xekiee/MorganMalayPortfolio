@@ -1,6 +1,6 @@
 import Styles from "./about.module.css";
 import Profile from "../Assets/Profilee.jpg";
-import Resume from "../public/Resume.pdf";
+import Resume from "../public/MorganMalayResume.pdf";
 export default function About() {
   return (
     <div>
