@@ -6,7 +6,12 @@ export default function TypedText() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Frontend Developer", "UI/UX Designer", "Web Developer"],
+      strings: [
+        "Frontend Developer",
+        "UI/UX Designer",
+        "Web Developer",
+        "Quality Assurance",
+      ],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,

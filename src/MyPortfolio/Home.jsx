@@ -1,6 +1,6 @@
 import TypedText from "./Animation";
 import Styles from "./home.module.css";
-import Profile from "../Assets/Coverr.png";
+import Profile from "../Assets/ProfPic.jpg";
 export default function Home() {
   return (
     <div>
