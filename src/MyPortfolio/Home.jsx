@@ -20,21 +20,28 @@ export default function Home() {
               style={{ "--i": 7 }}
               className="bx bxl-facebook"
               rel="noopener noreferrer"
+              target="_blank"
             ></a>
             <a
               href="https://www.instagram.com/morgzz_gan/"
               style={{ "--i": 8 }}
               className="bx bxl-instagram"
+              rel="noopener noreferrer"
+              target="_blank"
             ></a>
             <a
               href="https://web.whatsapp.com/"
               style={{ "--i": 9 }}
               className="bx bxl-whatsapp"
+              rel="noopener noreferrer"
+              target="_blank"
             ></a>
             <a
               href="https://github.com/Xekiee?tab=repositories"
               style={{ "--i": 10 }}
               className="bx bxl-github"
+              target="_blank"
+              rel="noopener noreferrer"
             ></a>
           </div>
         </div>
