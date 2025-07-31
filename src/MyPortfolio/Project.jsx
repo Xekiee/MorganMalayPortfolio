@@ -2,6 +2,7 @@ import Styles from "./projects.module.css";
 import Plantito from "../Assets/Plantitotita.png";
 import Portfolio from "../Assets/Portfolio.png";
 import SimpleJSApp from "../Assets/SimpleJSApp.png";
+import InvetorySystem from "../Assets/Inventory.png";
 export default function Project() {
   return (
     <div>
@@ -31,17 +32,17 @@ export default function Project() {
               <img src={Plantito} alt="" className={Styles.capstoneImage} />
             </div>
           </div>
-          <div className={Styles.Projects2}>
+          <div className={Styles.Projects3}>
             <div className={Styles.Title1}>
               <div className={Styles.Positionn}>
+                <span>UI/UX Design </span>
                 <span>Frontend Developer</span>
-                <span>UI/UX Designer</span>
               </div>
               <div className={Styles.Year}>2025</div>
             </div>
             <div className={Styles.TitleCapstonee}>
               <div className={Styles.projectTitle}>
-                <span> Intern : CGWCEISC Inventory System</span>
+                Intern : CGWCEISC Inventory System
               </div>
               <div className={Styles.Description}>
                 <span>
@@ -49,6 +50,13 @@ export default function Project() {
                   Accountability Officer.
                 </span>
               </div>
+            </div>
+            <div>
+              <img
+                src={InvetorySystem}
+                alt=""
+                className={Styles.imgPortfolio}
+              />
             </div>
           </div>
           <div className={Styles.Projects3}>
