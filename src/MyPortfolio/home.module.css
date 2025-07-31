@@ -93,11 +93,17 @@
 
 .profileImg {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   opacity: 0;
+  
   animation: SlideBottom 1s ease forwards;
   animation-delay: 0.3s;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
 
 
