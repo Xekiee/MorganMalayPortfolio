@@ -1,8 +1,9 @@
 import Styles from "./certificate.module.css";
-import Jira from "../public/JiraCertificate.pdf";
-import SoftwareTesting from "../public/SoftwareTesting.pdf";
-import Katalon from "../public/KatalonApiTesting.pdf";
-import CompleteQACourse from "../public/CompleteQACourse.pdf";
+import Jira from "../public/JiraCert.png";
+import SoftwareTesting from "../public/SoftwareCert.png";
+import Katalon from "../public/KatalonCert.png";
+import CompleteQACourse from "../public/QACompleteCert.png";
+
 export default function Certificate() {
   return (
     <div>
@@ -11,18 +12,10 @@ export default function Certificate() {
           <span>Certificate</span>
         </div>
         <div className={Styles.certificateProof}>
-          <div className={Styles.qaCert}>
-            <iframe src={Jira} width="100%" height="250px"></iframe>
-          </div>
-          <div className={Styles.qaCert}>
-            <iframe src={SoftwareTesting} width="100%" height="250px"></iframe>
-          </div>
-          <div className={Styles.qaCert}>
-            <iframe src={Katalon} width="100%" height="250px"></iframe>
-          </div>
-          <div className={Styles.qaCert}>
-            <iframe src={CompleteQACourse} width="100%" height="250px"></iframe>
-          </div>
+          <img className={Styles.qaCert} src={CompleteQACourse} alt="" />
+          <img className={Styles.qaCert} src={Jira} alt="" />
+          <img className={Styles.qaCert} src={Katalon} alt="" />
+          <img className={Styles.qaCert} src={SoftwareTesting} alt="" />
         </div>
       </section>
     </div>

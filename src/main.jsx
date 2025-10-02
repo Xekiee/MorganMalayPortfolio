@@ -5,8 +5,10 @@ import "./portfolio.css";
 import { ThemeProvider } from "./DarkLight.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <div className="magicpattern">
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </div>
   </StrictMode>
 );

@@ -10,16 +10,17 @@
 .certificateProof{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-left: 95px;
     display: grid;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    gap: 1rem;
 }
 .qaCert{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 350px;
-    height: 350px;
+    height: 250px;
 }

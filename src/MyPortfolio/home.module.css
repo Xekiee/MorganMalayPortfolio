@@ -6,7 +6,6 @@
   height: 100vh;
   width: 100%;
   padding: 70px 10% 0;
-  background: var(--pf-bg) no-repeat center/cover;
 }
 
 .homeContent {
