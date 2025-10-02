@@ -16,7 +16,7 @@ export default function About() {
           <div className={Styles.title}>
             <h2>About Me</h2>
           </div>
-          <span>Frontend Developer/ UI/UX Designer</span>
+          <span>Frontend Developer/ UI/UX Designer / Software QA Engineer</span>
           <p>
             I'm a passionate Frontend Developer and UI/UX Designer who loves
             turning ideas into clean, interactive, and user-focused digital

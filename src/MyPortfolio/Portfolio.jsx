@@ -4,6 +4,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Project from "./Project";
 import Skills from "./Skills";
+import Certificate from "./Certificate";
 import { useEffect } from "react";
 
 export default function Porfolio() {
@@ -42,6 +43,7 @@ export default function Porfolio() {
       <Skills />
       <Contact />
       <Project />
+      <Certificate />
     </div>
   );
 }

@@ -28,6 +28,11 @@ export default function Header() {
       label: "Projects",
       icon: <i className="bx bx-folder"></i>,
     },
+    {
+      id: "Cerficate",
+      label: "Certificate",
+      icon: <i className="bx bxs-certification"></i>,
+    },
   ];
 
   useEffect(() => {
